@@ -72,10 +72,7 @@ if (current_page() === "acCitar") {
     }
     % endif
     % if ctx.operation_code != OperationType.RECOGIDA_DE_TARJETA:
-    if (!selected) {
-      el.value = el.options[Math.floor(Math.random() * el.options.length)].value;
-      selected = true;
-    }
+    
     % endif
   }
   if (selected) {
